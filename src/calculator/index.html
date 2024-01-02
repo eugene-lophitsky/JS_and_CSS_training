@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <style>
+      h1,
+      label {
+        font-family: Calibri;
+      }
+
+      #digit1,
+      #digit2,
+      #calculated {
+        width: 150px;
+        height: 18px;
+      }
+
+      .calculated {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 30px;
+      }
+
+      #plus,
+      #minus,
+      #asterisk,
+      #slash {
+        padding: 4px 12px;
+        margin: 0 2px;
+      }
+
+      .buttons {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Калькулятор</h1>
+
+    <label for="digit1">Число 1: <input type="text" id="digit1" /></label>
+    <label for="digit2">Число 2: <input type="text" id="digit2" /></label>
+    <label class="calculated" for="calculated"
+      >Результат: <input type="text" id="calculated"
+    /></label>
+    <div class="buttons">
+      <button id="plus">+</button>
+      <button id="minus">-</button>
+      <button id="asterisk">*</button>
+      <button id="slash">/</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
